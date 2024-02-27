@@ -11,7 +11,7 @@ fecharBtn.onclick = () => {
 }
 
 fecharParticipanteBtn.onclick =() => {
-    formCriar.classList.remove('show');
+    overlay.classList.remove('show');
     formParticipante.classList.remove('show')
 
 
@@ -33,6 +33,7 @@ formCriar.onsubmit = () => {
         capacity: capacidade.value,
         members: []
     });
+    formCriar.reset();
     }
     
     adicionarCards();
